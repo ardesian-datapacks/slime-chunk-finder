@@ -32,3 +32,19 @@ A Slime Finder item can be crafted by throwing a Slimeball on the ground and the
 **NOTE: This item ONLY functions while held in your main hand.**
 
 When held in your main hand, the Slime Finder item will highlight when you are standing inside of a slime chunk. _(The item will stay highlighted if you put it away and walk outside of the chunk. It will update correctly only while held in your main hand.)_
+
+## Troubleshooting
+
+**You crafted the slime finder, but it's just NOT WORKING**
+
+* Did you enter your seed into the config/seed file?
+* If you did, remember that slime chunks are only 1 in 10 CHUNKS. So you must run 160 blocks in a straight line before you're statistically likely to find one. Even then, it's possible (not likely) that you can go a great many more chunks without finding one, if you're unlucky.
+
+**Slime Finder won't craft**
+
+* Are the items too close together? Try throwing them upward at about a 45° angle and throw both items at the same spot so that they land far enough away from you that you don't pick them up immediately.
+* Reload. This is usually the issue. Try running `/reload` to make sure MC picks up the changes in datapacks.
+* Still broken? Turn it off and back on again. Sometimes MC caches datapacks strangely, especially if you added a full datapack while it is running. Close Minecraft, including the launcher, and open it back up again. (If running on a server, close and restart the server.)
+* Still nothing? Run `/function slime_chunk_finder:in_slime_chunk`. While typing, MC should provide auto-complete options for the slime chunk functions.
+* * If it gives an error or cannot find the function, that means your datapack was installed incorrectly. Try removing everything you've added and following the instructions again carefully.
+* * Take some screenshots and make an issue on Github explaining your steps and I'll try to help you out.
