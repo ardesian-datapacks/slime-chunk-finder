@@ -19,7 +19,7 @@ This datapack adds the ability to find and detect slime chunks in game without o
 6. Drop the extracted version of your datapack into this folder.
 7. If your game is running and you have cheats enabled, type `/reload` into the chat. This can also be done in your server. Otherwise, close and reopen your world and you're ready to go!
 
-## Setup:
+## Setup
 
 Before you begin, you must enter your seed into the file located at `data/slime_chunk_finder/functions/config/seed.mcfunction`. Because this datapack employs scoreboards in order to run, you must first convert your seed into two 32 bit integers. A program to do so can be found [here](https://www.dropbox.com/s/env6wykjv0zffqh/seed.exe?raw=1) (Also written by [/r/elyisgreat](https://www.reddit.com/user/elyisgreat/))
 
