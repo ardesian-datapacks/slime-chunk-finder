@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<label for="seed">Enter the seed:</label>
+
+<input type="text" id="seed" name="seed" required maxlength="1024" size="40">
+
+<input type="button" value="Submit" onclick="output()">
+
+<script>
+function hashCode(s){
+  let h = 0;
+  for(let i = 0; i < s.length; i++){
+    h = Math.imul(31, h) + s.charCodeAt(i) | 0;
+  }
+  return h;
+}
+
+function getSeed(s){
+  let x = BigInt(hashCode(s));
+  if(/^[\-\+0-9]*$/.test(s)){
+    try{
+    x = BigInt(s);
+    if(BigInt.asIntN(64,x) !== x){throw RangeError();}
+    }catch(err){}
+  }
+  return {"hi":(x >> 32n),"lo":BigInt.asIntN(32,x)};
+}
+
+function output(){
+  let seed = getSeed(document.getElementById("seed").value);
+  document.write("# Copy this output to config/seed.mcfunction<br>scoreboard players set #seed_hi slimechunkfinder "+seed.hi+"<br>scoreboard players set #seed_lo slimechunkfinder "+seed.lo);
+}
+</script>
+
+</body>
+</html>
