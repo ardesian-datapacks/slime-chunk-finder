@@ -21,8 +21,9 @@ function getSeed(s){
   let x = BigInt(hashCode(s));
   if(/^[\-\+0-9]*$/.test(s)){
     try{
-    x = BigInt(s);
-    if(BigInt.asIntN(64,x) !== x){throw RangeError();}
+    let y = BigInt(s);
+    if(BigInt.asIntN(64,y) !== y){throw RangeError();}
+    x = y;
     }catch(err){}
   }
   return {"hi":(x >> 32n),"lo":BigInt.asIntN(32,x)};
