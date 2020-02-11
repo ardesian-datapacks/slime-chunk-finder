@@ -5,7 +5,7 @@
 -->
 # Vanilla Slime Chunk Finder
 
-* All credit goes to [/r/elyisgreat](https://www.reddit.com/user/elyisgreat/). He did all of the incredible work in calculating a Slime Chunk using scoreboards.
+* All credit goes to [/u/elyisgreat](https://www.reddit.com/user/elyisgreat/). He did all of the incredible work in calculating a Slime Chunk using scoreboards.
 
 This datapack adds the ability to find and detect slime chunks in game without opening external programs.
 
@@ -21,7 +21,7 @@ This datapack adds the ability to find and detect slime chunks in game without o
 
 ## Setup
 
-Before you begin, you must enter your seed into the file located at `data/slime_chunk_finder/functions/config/seed.mcfunction`. Because this datapack employs scoreboards in order to run, you must first convert your seed into two 32 bit integers. A program to do so can be found [here](https://www.dropbox.com/s/env6wykjv0zffqh/seed.exe?raw=1) (Also written by [/r/elyisgreat](https://www.reddit.com/user/elyisgreat/))
+Before you begin, you must enter your seed into the file located at `data/slime_chunk_finder/functions/config/seed.mcfunction`. Because this datapack employs scoreboards in order to run, you must first convert your seed into two 32 bit integers. (A program to do so can be found within config/seed in the functions folder. Click on the HTML file to run it in your browser.)
 
 ## Crafting the Slime Finder
 
