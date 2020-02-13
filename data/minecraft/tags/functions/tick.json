@@ -1,5 +1,5 @@
 {
     "values": [
-        "slime_chunk_finder:src/survival/detect"
+        "slime_chunk_finder:src/survival/loop"
     ]
 }
