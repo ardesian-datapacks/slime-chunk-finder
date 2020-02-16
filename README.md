@@ -1,8 +1,3 @@
-<!--
-  TODO:
-  Allow Slime Finder to be used anywhere in inventory?
-  At least unhighlight item anywhere in inventory.
--->
 # Vanilla Slime Chunk Finder
 
 * All credit goes to [/u/elyisgreat](https://www.reddit.com/user/elyisgreat/). He did all of the incredible work in calculating a Slime Chunk using scoreboards.
@@ -21,30 +16,24 @@ This datapack adds the ability to find and detect slime chunks in game without o
 
 ## Setup
 
-Before you begin, you must enter your seed into the file located at `data/slime_chunk_finder/functions/config/seed.mcfunction`. Because this datapack employs scoreboards in order to run, you must first convert your seed into two 32 bit integers. (A program to do so can be found within config/seed in the functions folder. Click on the HTML file to run it in your browser.)
+Before you begin, you must enter your seed into the file located at `data/slime_chunk_finder/functions/config/seed.mcfunction`. Because this datapack employs scoreboards in order to run, you must first convert your seed into two 32 bit integers. (A web program to do so can be found within `data/slime_chunk_finder/functions/config`. Click on the HTML file to run it in your browser.)
 
-## Crafting the Slime Finder
+## Obtaining the Slime Chunk Finder Item
 
-A Slime Finder item can be crafted by throwing a Slimeball on the ground and then throwing a Compass on top of it. They will "craft" together into a Slime Finder item.
+A Slime Chunk Finder item can be found in about 25% of dungeon loot chests and about 50% of jungle temple loot chests.
 
-## Using the Slime Finder
+## Using the Slime Chunk Finder
 
-**NOTE: This item ONLY functions while held in your main hand.**
-
-When held in your main hand, the Slime Finder item will highlight when you are standing inside of a slime chunk. _(The item will stay highlighted if you put it away and walk outside of the chunk. It will update correctly only while held in your main hand.)_
+When held, the Slime Chunk Finder item will display "in a slime chunk" on the action bar when you are standing inside of a slime chunk, and it will display "not in a slime chunk" on the action bar when you are not standing inside of a slime chunk.
 
 ## Troubleshooting
 
-**You crafted the slime finder, but it's just NOT WORKING**
+**You obtained the slime chunk finder, but it's just NOT WORKING**
 
 * Did you enter your seed into the config/seed file?
 * If you did, remember that slime chunks are only 1 in 10 CHUNKS. So you must run 160 blocks in a straight line before you're statistically likely to find one. Even then, it's possible (not likely) that you can go a great many more chunks without finding one, if you're unlucky.
-
-**Slime Finder won't craft**
-
-* Are the items too close together? Try throwing them upward at about a 45° angle and throw both items at the same spot so that they land far enough away from you that you don't pick them up immediately.
 * Reload. This is usually the issue. Try running `/reload` to make sure MC picks up the changes in datapacks.
 * Still broken? Turn it off and back on again. Sometimes MC caches datapacks strangely, especially if you added a full datapack while it is running. Close Minecraft, including the launcher, and open it back up again. (If running on a server, close and restart the server.)
-* Still nothing? Run `/function slime_chunk_finder:in_slime_chunk`. While typing, MC should provide auto-complete options for the slime chunk functions.
-* * If it gives an error or cannot find the function, that means your datapack was installed incorrectly. Try removing everything you've added and following the instructions again carefully.
-* * Take some screenshots and make an issue on Github explaining your steps and I'll try to help you out.
+* Still nothing? Enable cheats and then run `/function slime_chunk_finder:in_slime_chunk`. (While typing, MC should provide auto-complete options for the slime chunk functions). 
+	* If it gives an error or cannot find the function, that means your datapack was installed incorrectly. Try removing everything you've added and following the instructions again carefully.
+	* Take some screenshots and make an issue on Github explaining your steps and I'll try to help you out.

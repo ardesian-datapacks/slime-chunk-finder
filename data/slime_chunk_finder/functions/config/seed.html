@@ -4,7 +4,7 @@
 
 <label for="seed">Enter the seed:</label>
 
-<input type="text" id="seed" name="seed" required maxlength="1024" size="40">
+<input type="text" id="seed" name="seed" maxlength="32" size="42">
 
 <input type="button" value="Submit" onclick="output()">
 
@@ -21,9 +21,9 @@ function getSeed(s){
   let x = BigInt(hashCode(s));
   if(/^[\-\+0-9]*$/.test(s)){
     try{
-    let y = BigInt(s);
-    if(BigInt.asIntN(64,y) !== y){throw RangeError();}
-    x = y;
+      let y = BigInt(s);
+      if(BigInt.asIntN(64,y) !== y){throw RangeError();}
+      x = y;
     }catch(err){}
   }
   return {"hi":(x >> 32n),"lo":BigInt.asIntN(32,x)};
@@ -31,7 +31,9 @@ function getSeed(s){
 
 function output(){
   let seed = getSeed(document.getElementById("seed").value);
-  document.write("# Copy this output to config/seed.mcfunction<br>scoreboard players set #seed_hi slimechunkfinder "+seed.hi+"<br>scoreboard players set #seed_lo slimechunkfinder "+seed.lo);
+  document.write("# Copy this output to config/seed.mcfunction"
+                +"<br>"+"scoreboard players set #seed_hi slimechunkfinder "+seed.hi
+                +"<br>"+"scoreboard players set #seed_lo slimechunkfinder "+seed.lo);
 }
 </script>
 
