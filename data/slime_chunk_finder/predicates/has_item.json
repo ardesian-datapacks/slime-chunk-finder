@@ -8,7 +8,7 @@
         "equipment": {
           "mainhand": {
             "item": "minecraft:slime_ball",
-            "nbt": "{HideFlags:1,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1s}]}"
+            "nbt": "{SlimeFinder:1b}"
           }
         }
       }
@@ -20,7 +20,7 @@
         "equipment": {
           "offhand": {
             "item": "minecraft:slime_ball",
-            "nbt": "{HideFlags:1,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1s}]}"
+            "nbt": "{SlimeFinder:1b}"
           }
         }
       }

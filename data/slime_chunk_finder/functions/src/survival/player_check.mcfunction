@@ -6,8 +6,8 @@ execute store result score #neq slimechunkfinder if score #neq slimechunkfinder 
 
 execute if score #neq slimechunkfinder matches 1 run function slime_chunk_finder:in_slime_chunk
 
-execute if score @s in_slime_chunk matches 0 run title @s actionbar {"text":"not in a slime chunk","color":"red"}
-execute if score @s in_slime_chunk matches 1 run title @s actionbar {"text":"in a slime chunk","color":"green"}
+execute if score @s in_slime_chunk matches 0 run title @s actionbar {"text":"Normal spawning circumstances","color":"red"}
+execute if score @s in_slime_chunk matches 1 run title @s actionbar {"text":"Slime spawning detected!","color":"green"}
 
 scoreboard players operation @s scf_x = #new_x scf_x
 scoreboard players operation @s scf_z = #new_z scf_z

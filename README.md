@@ -20,7 +20,8 @@ Before you begin, you must enter your seed into the file located at `data/slime_
 
 ## Obtaining the Slime Chunk Finder Item
 
-A Slime Chunk Finder item can be found in about 25% of dungeon loot chests and about 50% of jungle temple loot chests.
+A Slime Chunk Finder item can be traded from an occasional Wandering Trader (about 1 in 3 of them will have it)
+It also exists as a 1% drop from witches.
 
 ## Using the Slime Chunk Finder
 
@@ -34,6 +35,6 @@ When held, the Slime Chunk Finder item will display "in a slime chunk" on the ac
 * If you did, remember that slime chunks are only 1 in 10 CHUNKS. So you must run 160 blocks in a straight line before you're statistically likely to find one. Even then, it's possible (not likely) that you can go a great many more chunks without finding one, if you're unlucky.
 * Reload. This is usually the issue. Try running `/reload` to make sure MC picks up the changes in datapacks.
 * Still broken? Turn it off and back on again. Sometimes MC caches datapacks strangely, especially if you added a full datapack while it is running. Close Minecraft, including the launcher, and open it back up again. (If running on a server, close and restart the server.)
-* Still nothing? Enable cheats and then run `/function slime_chunk_finder:in_slime_chunk`. (While typing, MC should provide auto-complete options for the slime chunk functions). 
+* Still nothing? Enable cheats and then run `/function slime_chunk_finder:in_slime_chunk`. (While typing, MC should provide auto-complete options for the slime chunk functions).
 	* If it gives an error or cannot find the function, that means your datapack was installed incorrectly. Try removing everything you've added and following the instructions again carefully.
 	* Take some screenshots and make an issue on Github explaining your steps and I'll try to help you out.
