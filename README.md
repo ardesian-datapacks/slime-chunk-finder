@@ -16,11 +16,12 @@ This datapack adds the ability to find and detect slime chunks in game without o
 
 ## Setup
 
-Before you begin, you must enter your seed into the file located at `data/slime_chunk_finder/functions/config/seed.mcfunction`. Because this datapack employs scoreboards in order to run, you must first convert your seed into two 32 bit integers. (A web program to do so can be found within `data/slime_chunk_finder/functions/config`. Click on the HTML file to run it in your browser.)
+Before you begin, you must enter your seed into the file located at `data/slime_chunk_finder/functions/config/seed.mcfunction`. Because this datapack employs scoreboards in order to run, you must first convert your seed into two 32 bit integers. (A web program to do so can be found within `data/slime_chunk_finder/functions/config`. Click on the HTML file to run it in your browser. Please use Google Chrome as some other browsers do not support some functions used.)
 
 ## Obtaining the Slime Chunk Finder Item
 
 A Slime Chunk Finder item can be traded from an occasional Wandering Trader (about 1 in 3 of them will have it)
+
 It also exists as a 1% drop from witches.
 
 ## Using the Slime Chunk Finder
