@@ -193,7 +193,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "display:{Name:\"{\\\"text\\\":\\\"Slime Chunk Finder\\\",\\\"italic\\\":\\\"false\\\"}\", Lore: [\"\\\"Mystical artifact\\\"\", \"\\\"Senses slime stability\\\"\"]}, Enchantments: [{id: unbreaking, lvl: 1}], SlimeFinder: 1b, HideFlags: 1b"
+              "tag": "{display:{Name:'{text:\"Slime Chunk Finder\",italic:false}',Lore:[\"\\\"Mystical artifact\\\"\",\"\\\"Senses slime stability\\\"\"]},Enchantments:[{id:unbreaking,lvl:1}],SlimeFinder:1b,HideFlags:1b}"
             }
           ],
           "name": "minecraft:slime_ball"
