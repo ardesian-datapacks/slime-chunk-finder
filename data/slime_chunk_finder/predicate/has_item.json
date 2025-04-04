@@ -7,8 +7,12 @@
       "predicate": {
         "equipment": {
           "mainhand": {
-            "item": "minecraft:slime_ball",
-            "nbt": "{SlimeFinder:1b}"
+            "items": "minecraft:slime_ball",
+            "components": {
+              "minecraft:custom_data": {
+                "SlimeFinder": true
+              }
+            }
           }
         }
       }
@@ -19,8 +23,12 @@
       "predicate": {
         "equipment": {
           "offhand": {
-            "item": "minecraft:slime_ball",
-            "nbt": "{SlimeFinder:1b}"
+            "items": "minecraft:slime_ball",
+            "components": {
+              "minecraft:custom_data": {
+                "SlimeFinder": true
+              }
+            }
           }
         }
       }
